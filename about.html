@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> <!-- Link to Dancing Script -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh; /* Full viewport height */
+        }
+
+        /* Left Section */
+        .left-section {
+            width: 40%;
+            background-color: #ffcccc; /* Light Red */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .left-section img {
+            width: 80%; /* Adjust image size */
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 20px; /* Space between image and text */
+        }
+
+        .left-section h1 {
+            font-family: 'Dancing Script', cursive; /* Applying Dancing Script font */
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .left-section p {
+            font-family: 'Georgia', serif; /* Changed font to Georgia */
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Right Section */
+        .right-section {
+            width: 60%;
+            background-color: #cceeff; /* Light Blue */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-section img {
+            width: 90%;
+            height: auto;
+            max-height: 90%;
+            object-fit: cover;
+        }
+
+        /* Back to Home Link */
+        .back-link {
+            margin-top: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Section (Image, About Me Text, and Description) -->
+    <div class="left-section">
+        <!-- Profile Image on the Left -->
+        <img src="img/ArtN.Artist_.png" alt="Your Profile Picture"> <!-- Replace with your image file -->
+        
+        <h1>About Me</h1>
+        <p>I am an illustrator and aspiring animator who loves telling narratives through visual media. I am currently creating animations, storyboards, and character design.</p>
+        <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+
+    <!-- Right Section (Image) -->
+    <div class="right-section">
+        <img src="img/CrossRoad.png" alt="Profile Picture">
+    </div>
+
+</body>
+</html>

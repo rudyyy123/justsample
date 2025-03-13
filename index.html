@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <section class="header-section">
+        <!-- Left Side: Name & Info -->
+        <div class="header-content">
+            <h1>Justin Lopez</h1>
+            <h2>Character Design | Visual Development</h2>
+        </div>
+
+        <!-- Right Side: Navigation Links -->
+        <div class="nav-links">
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="gallery">
+        <div class="gallery-item" onclick="openModal('img/Untitled_Artwork copy 2.png', 'Devil on Ice')">
+            <img src="img/Untitled_Artwork copy 2.png" alt="Project 1">
+        </div>
+        <div class="gallery-item" onclick="openModal('img/BoBots!.png', 'Bo-Bots')">
+            <img src="img/BoBots!.png" alt="Project 2">
+        </div>
+        <div class="gallery-item" onclick="openModal('img/Barricade.png', 'Barricades')">
+            <img src="img/Barricade.png" alt="Project 3">
+        </div>
+        <div class="gallery-item" onclick="openModal('img/fp4.png', 'Discovery')">
+            <img src="img/fp4.png" alt="Project 4">
+        </div>
+        <div class="gallery-item" onclick="openModal('img/ToAdventures.png', 'Departure')">
+            <img src="img/ToAdventures.png" alt="Project 5">
+        </div>
+        <div class="gallery-item" onclick="openModal('img/fp6 (2).PNG', 'The Final Lesson')">
+            <img src="img/fp6 (2).PNG" alt="Project 6">
+        </div>
+    </section>
+
+    <!-- Modal for Enlarged Image -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Enlarged Image">
+        <div class="caption" id="modalCaption"></div>
+    </div>
+
+    <script>
+        function openModal(imageSrc, caption) {
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('modalCaption').innerText = caption;
+            document.getElementById('imageModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
